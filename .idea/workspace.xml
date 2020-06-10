@@ -6,7 +6,16 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a7fbfe0d-9c5b-431c-b5e3-a10a503fc714" name="Default Changelist" comment="" />
+    <list default="true" id="a7fbfe0d-9c5b-431c-b5e3-a10a503fc714" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/frb/edu/br/igor/controladores/CidadeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/frb/edu/br/igor/dominio/contratos/ICidade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frb/edu/br/igor/dominio/contratos/ICidade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/frb/edu/br/igor/dominio/contratos/IEndereco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frb/edu/br/igor/dominio/contratos/IEndereco.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/frb/edu/br/igor/dominio/contratos/IPais.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frb/edu/br/igor/dominio/contratos/IPais.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/frb/edu/br/igor/infra/repositorios/CidadeRepositorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frb/edu/br/igor/infra/repositorios/CidadeRepositorio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/frb/edu/br/igor/infra/repositorios/EnderecoRepositorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frb/edu/br/igor/infra/repositorios/EnderecoRepositorio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/frb/edu/br/igor/infra/repositorios/PaisRepositorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frb/edu/br/igor/infra/repositorios/PaisRepositorio.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +30,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -29,6 +41,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1d3bZUShyVCufma045zVrb5YeRI" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -145,11 +158,22 @@
       <updated>1591656779705</updated>
       <workItem from="1591657022761" duration="3733000" />
       <workItem from="1591702430865" duration="1125000" />
-      <workItem from="1591751545365" duration="4748000" />
+      <workItem from="1591751545365" duration="5544000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

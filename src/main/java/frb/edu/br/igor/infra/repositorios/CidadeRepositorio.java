@@ -81,7 +81,7 @@ public class CidadeRepositorio extends BancoDeDadosUtil implements ICidade {
     }
 
     @Override
-    public boolean excluir(int id) {
+    public boolean excluir(Long id) {
 
         String sql = "DELETE FROM cidade WHERE cidade_id = ?";
 
@@ -91,7 +91,7 @@ public class CidadeRepositorio extends BancoDeDadosUtil implements ICidade {
 
         try {
             statement = getPreparedStatement(sql);
-            statement.setInt(1, id);
+            statement.setLong(1, id);
             retorno = statement.executeUpdate();
             statement.close();
         } catch (ClassNotFoundException ex) {
@@ -106,7 +106,7 @@ public class CidadeRepositorio extends BancoDeDadosUtil implements ICidade {
     }
 
     @Override
-    public Cidade getRegistroPorId(int id) {
+    public Cidade getRegistroPorId(Long id) {
 
         Cidade cidade = new Cidade();
 
@@ -116,7 +116,7 @@ public class CidadeRepositorio extends BancoDeDadosUtil implements ICidade {
 
             PreparedStatement statement = super.getPreparedStatement(sql);
 
-            statement.setInt(1, id);
+            statement.setLong(1, id);
             ResultSet resultSet = statement.executeQuery();
 
             while(resultSet.next()){

@@ -10,9 +10,9 @@ public interface IPais {
 
     boolean alterar(Pais pais);
 
-    boolean excluir(int id);
+    boolean excluir(Long id);
 
-    Pais getRegistroPorId(int id);
+    Pais getRegistroPorId(Long id);
 
     List<Pais> getListaDeTodosRegistros();
 }

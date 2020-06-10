@@ -11,9 +11,9 @@ public interface IEndereco {
 
     boolean alterar(Endereco endereco);
 
-    boolean excluir(int id);
+    boolean excluir(Long id);
 
-    Endereco getRegistroPorId(int id);
+    Endereco getRegistroPorId(Long id);
 
     List<Endereco> getListaDeTodosRegistros();
 }

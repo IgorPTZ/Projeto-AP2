@@ -90,7 +90,7 @@ public class EnderecoRepositorio extends BancoDeDadosUtil implements IEndereco {
     }
 
     @Override
-    public boolean excluir(int id) {
+    public boolean excluir(Long id) {
 
         String sql = "DELETE FROM endereco WHERE endereco_id = ?";
 
@@ -101,7 +101,7 @@ public class EnderecoRepositorio extends BancoDeDadosUtil implements IEndereco {
         try {
 
             statement = getPreparedStatement(sql);
-            statement.setInt(1, id);
+            statement.setLong(1, id);
             retorno = statement.executeUpdate();
             statement.close();
         } catch (ClassNotFoundException ex) {
@@ -116,7 +116,7 @@ public class EnderecoRepositorio extends BancoDeDadosUtil implements IEndereco {
     }
 
     @Override
-    public Endereco getRegistroPorId(int id) {
+    public Endereco getRegistroPorId(Long id) {
 
         Endereco endereco = new Endereco();
 
@@ -126,7 +126,7 @@ public class EnderecoRepositorio extends BancoDeDadosUtil implements IEndereco {
 
             PreparedStatement statement = super.getPreparedStatement(sql);
 
-            statement.setInt(1, id);
+            statement.setLong(1, id);
             ResultSet resultSet = statement.executeQuery();
 
             while(resultSet.next()){

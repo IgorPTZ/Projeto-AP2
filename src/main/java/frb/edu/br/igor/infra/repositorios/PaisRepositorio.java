@@ -78,7 +78,7 @@ public class PaisRepositorio extends BancoDeDadosUtil implements IPais{
     }
 
     @Override
-    public boolean excluir(int id) {
+    public boolean excluir(Long id) {
 
         String sql = "DELETE FROM pais WHERE pais_id = ?";
 
@@ -88,7 +88,7 @@ public class PaisRepositorio extends BancoDeDadosUtil implements IPais{
 
         try {
             statement = getPreparedStatement(sql);
-            statement.setInt(1, id);
+            statement.setLong(1, id);
             retorno = statement.executeUpdate();
             statement.close();
         } catch (ClassNotFoundException ex) {
@@ -103,7 +103,7 @@ public class PaisRepositorio extends BancoDeDadosUtil implements IPais{
     }
 
     @Override
-    public Pais getRegistroPorId(int id) {
+    public Pais getRegistroPorId(Long id) {
 
         Pais pais = new Pais();
 
@@ -113,7 +113,7 @@ public class PaisRepositorio extends BancoDeDadosUtil implements IPais{
 
             PreparedStatement statement = super.getPreparedStatement(sql);
 
-            statement.setInt(1, id);
+            statement.setLong(1, id);
             ResultSet resultSet = statement.executeQuery();
 
             while(resultSet.next()){

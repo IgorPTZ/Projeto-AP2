@@ -10,9 +10,9 @@ public interface ICidade {
 
     boolean alterar(Cidade cidade);
 
-    boolean excluir(int id);
+    boolean excluir(Long id);
 
-    Cidade getRegistroPorId(int id);
+    Cidade getRegistroPorId(Long id);
 
     List<Cidade> getListaDeTodosRegistros();
 }
