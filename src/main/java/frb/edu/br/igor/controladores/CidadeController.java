@@ -8,8 +8,6 @@ import javax.faces.view.ViewScoped;
 import javax.inject.Named;
 import java.util.List;
 
-@Named
-@ViewScoped
 public class CidadeController {
 
     private Cidade cidade;

@@ -2,19 +2,29 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="igor-projeto-ap-dois" />
+      <artifact name="igor-projeto-ap-dois:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a7fbfe0d-9c5b-431c-b5e3-a10a503fc714" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/frb/edu/br/igor/controladores/CidadeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/igor_projeto_ap_dois.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/igor_projeto_ap_dois_ejb_exploded.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/frb/edu/br/igor/dominio/contratos/ICidade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frb/edu/br/igor/dominio/contratos/ICidade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/frb/edu/br/igor/dominio/contratos/IEndereco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frb/edu/br/igor/dominio/contratos/IEndereco.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/frb/edu/br/igor/dominio/contratos/IPais.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frb/edu/br/igor/dominio/contratos/IPais.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/frb/edu/br/igor/infra/repositorios/CidadeRepositorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frb/edu/br/igor/infra/repositorios/CidadeRepositorio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/frb/edu/br/igor/infra/repositorios/EnderecoRepositorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frb/edu/br/igor/infra/repositorios/EnderecoRepositorio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/frb/edu/br/igor/infra/repositorios/PaisRepositorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frb/edu/br/igor/infra/repositorios/PaisRepositorio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/igor_projeto_ap_dois.war/igor-projeto-ap-dois.ear" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/igor_projeto_ap_dois_ejb_exploded.rar/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/igor_projeto_ap_dois_ejb_exploded.rar/frb/edu/br/igor/controladores/CidadeController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/igor_projeto_ap_dois_ejb_exploded.rar/frb/edu/br/igor/dominio/contratos/ICidade.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/igor_projeto_ap_dois_ejb_exploded.rar/frb/edu/br/igor/dominio/contratos/IEndereco.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/igor_projeto_ap_dois_ejb_exploded.rar/frb/edu/br/igor/dominio/contratos/IPais.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/igor_projeto_ap_dois_ejb_exploded.rar/frb/edu/br/igor/dominio/entidades/Cidade.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/igor_projeto_ap_dois_ejb_exploded.rar/frb/edu/br/igor/dominio/entidades/Endereco.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/igor_projeto_ap_dois_ejb_exploded.rar/frb/edu/br/igor/dominio/entidades/Pais.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/igor_projeto_ap_dois_ejb_exploded.rar/frb/edu/br/igor/infra/data/BancoDeDadosUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/igor_projeto_ap_dois_ejb_exploded.rar/frb/edu/br/igor/infra/repositorios/CidadeRepositorio.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/igor_projeto_ap_dois_ejb_exploded.rar/frb/edu/br/igor/infra/repositorios/EnderecoRepositorio.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/igor_projeto_ap_dois_ejb_exploded.rar/frb/edu/br/igor/infra/repositorios/PaisRepositorio.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/frb/edu/br/igor/controladores/CidadeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frb/edu/br/igor/controladores/CidadeController.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,8 +55,9 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/maratona-jsf" />
+    <property name="nodejs.jest.jest_package" value="" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.30191457" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
@@ -74,10 +85,11 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="JBoss 18.0.0.Final" type="JBossConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="JBoss 18.0.0.Final" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/igor_projeto_ap_dois/" />
+    <configuration name="JBoss 18.0.0.Final" type="JBossConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="JBoss 18.0.0.Final" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/igor_projeto_ap_dois_war_exploded/" />
+      <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="igor-projeto-ap-dois">
+        <artifact name="igor-projeto-ap-dois:war exploded">
           <settings />
         </artifact>
       </deployment>
@@ -85,13 +97,13 @@
         <option name="SERVER" />
         <option name="BINDING_SET_NAME" value="" />
         <option name="DOMAIN" value="false" />
-        <option name="SERVER_GROUP" value="main-server-group" />
+        <option name="SERVER_GROUP" />
         <option name="USERNAME" value="" />
         <option name="CREDENTIAL_ALIAS" />
       </server-settings>
       <predefined_log_file enabled="true" id="JBoss" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="53940" />
+        <option name="DEBUG_PORT" value="57048" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -141,8 +153,71 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="igor-projeto-ap-dois" />
+          <artifact name="igor-projeto-ap-dois:war exploded" />
         </option>
+      </method>
+    </configuration>
+    <configuration default="true" type="JBossConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="JBoss 18.0.0.Final" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment />
+      <server-settings>
+        <option name="SERVER" />
+        <option name="BINDING_SET_NAME" value="" />
+        <option name="DOMAIN" value="false" />
+        <option name="SERVER_GROUP" />
+        <option name="USERNAME" value="" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="JBoss" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="57048" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
       </method>
     </configuration>
   </component>
@@ -158,7 +233,7 @@
       <updated>1591656779705</updated>
       <workItem from="1591657022761" duration="3733000" />
       <workItem from="1591702430865" duration="1125000" />
-      <workItem from="1591751545365" duration="5544000" />
+      <workItem from="1591751545365" duration="7355000" />
     </task>
     <servers />
   </component>
