@@ -1,0 +1,18 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="igor-projeto-ap-dois">
+    <output-path>$PROJECT_DIR$/out/artifacts/igor_projeto_ap_dois.war</output-path>
+    <root id="archive" name="igor-projeto-ap-dois.war">
+      <element id="javaee-facet-resources" facet="igor-projeto-ap-dois/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="igor-projeto-ap-dois" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="mysql-connector-java-5.1.48" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="igor-projeto-ap-dois/ejb/EJB" />
+      <element id="javaee-facet-resources" facet="igor-projeto-ap-dois/javaeeApplication/javaEEApplication" />
+    </root>
+  </artifact>
+</component>

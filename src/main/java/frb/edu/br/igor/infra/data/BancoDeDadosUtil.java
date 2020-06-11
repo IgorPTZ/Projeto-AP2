@@ -7,7 +7,7 @@ public abstract class BancoDeDadosUtil {
 
     public Connection getConnection() throws ClassNotFoundException, SQLException {
         if(this.connection == null){
-            String url = "jdbc:mysql://localhost:3306/igor-projeto-ap-dois?zeroDateTimeBehavior=convertToNull";
+            String url = "jdbc:mysql://localhost:3306/igor_projeto_ap_dois?zeroDateTimeBehavior=convertToNull";
             String psw = "";
             String usr = "root";
             String drive = "com.mysql.jdbc.Driver";

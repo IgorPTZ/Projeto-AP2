@@ -17,6 +17,8 @@ import java.util.logging.Logger;
 
 public class CidadeRepositorio extends BancoDeDadosUtil implements ICidade {
 
+    private PaisRepositorio paisRepositorio = new PaisRepositorio();
+
     @Override
     public boolean inserir(Cidade cidade) {
 
@@ -143,6 +145,7 @@ public class CidadeRepositorio extends BancoDeDadosUtil implements ICidade {
     public List<Cidade> getListaDeTodosRegistros() {
 
         List<Cidade> cidades = new LinkedList<Cidade>();
+        Pais pais = null;
         String sql = "SELECT cidade_id, cidade, pais_id, ultima_atualizacao FROM cidade ";
 
         try {
@@ -151,9 +154,11 @@ public class CidadeRepositorio extends BancoDeDadosUtil implements ICidade {
 
             while(resultSet.next()){
 
+                pais = paisRepositorio.getRegistroPorId(resultSet.getLong("pais_id"));
+
                 cidades.add(new Cidade(resultSet.getLong("pais_id"),
                                        resultSet.getString("cidade"),
-                                       new Pais(resultSet.getLong("pais_id")),
+                                       pais,
                                        resultSet.getTimestamp("ultima_atualizacao")));
             }
 

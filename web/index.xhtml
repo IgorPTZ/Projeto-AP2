@@ -6,6 +6,16 @@
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
       xmlns:f="http://xmlns.jcp.org/jsf/core">
    <f:view>
-      <h:outputLabel value="Hello, world"/>
+      <h:form>
+         <h2>CRUD DE LOCALIZAÇÃO</h2>
+         <br />
+         <h:commandButton value="Ir para a listagem de paises" action="index"/>
+         <br />
+         <br />
+         <h:commandButton value="Ir para a listagem de cidades" action="listagem-cidade" />
+         <br />
+         <br />
+         <h:commandButton value="Ir para a listagem de endereços" actions="index" />
+      </h:form>
    </f:view>
 </html>

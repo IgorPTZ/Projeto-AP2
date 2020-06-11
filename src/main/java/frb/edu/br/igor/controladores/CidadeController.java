@@ -4,11 +4,14 @@ import frb.edu.br.igor.dominio.contratos.ICidade;
 import frb.edu.br.igor.dominio.entidades.Cidade;
 import frb.edu.br.igor.infra.repositorios.CidadeRepositorio;
 
-import javax.faces.view.ViewScoped;
+import javax.enterprise.context.SessionScoped;
 import javax.inject.Named;
+import java.io.Serializable;
 import java.util.List;
 
-public class CidadeController {
+@Named
+@SessionScoped
+public class CidadeController implements Serializable {
 
     private Cidade cidade;
     private List<Cidade> cidades = null;
@@ -54,7 +57,7 @@ public class CidadeController {
         cidadeRepositorio.alterar(cidade);
         cidade = null;
 
-        return "voltaParaListagem";
+        return "listagem-cidade";
     }
 
     public String finalizaDelecao(){
