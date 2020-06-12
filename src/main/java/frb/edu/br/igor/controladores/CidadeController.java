@@ -30,29 +30,25 @@ public class CidadeController implements Serializable {
     }
 
     public List<Cidade> getCidades() {
-
-        if(cidades == null){
-            cidades = cidadeRepositorio.getListaDeTodosRegistros();
-        }
-        return cidades;
+            return cidades = cidadeRepositorio.getListaDeTodosRegistros();
     }
 
     public String prepararInclusao(){
 
         cidade = new Cidade ();
 
-        return "vaiParaIncluir";
+        return "adicao-cidade";
     }
 
-    public String finalizaInclusao(){
+    public String finalizarInclusao(){
 
         cidadeRepositorio.inserir(cidade);
         cidade = null;
 
-        return "voltaParaListagem";
+        return "listagem-cidade";
     }
 
-    public String finalizaEdicao(){
+    public String finalizarEdicao(){
 
         cidadeRepositorio.alterar(cidade);
         cidade = null;
@@ -60,10 +56,11 @@ public class CidadeController implements Serializable {
         return "listagem-cidade";
     }
 
-    public String finalizaDelecao(){
+    public String finalizarDelecao(){
 
         cidadeRepositorio.excluir(cidade.getCidade_id());
         cidade = null;
-        return "refresh";
+
+        return "listagem-cidade";
     }
 }

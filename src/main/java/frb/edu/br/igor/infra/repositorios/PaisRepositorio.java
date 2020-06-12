@@ -49,7 +49,7 @@ public class PaisRepositorio extends BancoDeDadosUtil implements IPais{
     @Override
     public boolean alterar(Pais pais) {
 
-        String sql = "UPDATE pais SET pais = ?, ultima_atualizacao = ?" + " WHERE pais_id = ?";
+        String sql = "UPDATE pais SET pais = ?, ultima_atualizacao = ? WHERE pais_id = ?";
 
         PreparedStatement statement;
 

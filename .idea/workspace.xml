@@ -7,38 +7,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a7fbfe0d-9c5b-431c-b5e3-a10a503fc714" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/edicao-cidade.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/listagem-cidade.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/igor_projeto_ap_dois_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/igor_projeto_ap_dois.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/frb/edu/br/igor/controladores/PaisController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/frb/edu/br/igor/controladores/util/PaisConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/.idea/web.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/adicao-cidade.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/igor-projeto-ap-dois.iml" beforeDir="false" afterPath="$PROJECT_DIR$/igor-projeto-ap-dois.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/igor_projeto_ap_dois_war_exploded.war/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/igor_projeto_ap_dois_war_exploded.war/WEB-INF/beans.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/igor_projeto_ap_dois_war_exploded.war/WEB-INF/classes/frb/edu/br/igor/controladores/CidadeController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/igor_projeto_ap_dois_war_exploded.war/WEB-INF/classes/frb/edu/br/igor/dominio/contratos/ICidade.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/igor_projeto_ap_dois_war_exploded.war/WEB-INF/classes/frb/edu/br/igor/dominio/contratos/IEndereco.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/igor_projeto_ap_dois_war_exploded.war/WEB-INF/classes/frb/edu/br/igor/dominio/contratos/IPais.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/igor_projeto_ap_dois_war_exploded.war/WEB-INF/classes/frb/edu/br/igor/dominio/entidades/Cidade.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/igor_projeto_ap_dois_war_exploded.war/WEB-INF/classes/frb/edu/br/igor/dominio/entidades/Endereco.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/igor_projeto_ap_dois_war_exploded.war/WEB-INF/classes/frb/edu/br/igor/dominio/entidades/Pais.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/igor_projeto_ap_dois_war_exploded.war/WEB-INF/classes/frb/edu/br/igor/infra/data/BancoDeDadosUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/igor_projeto_ap_dois_war_exploded.war/WEB-INF/classes/frb/edu/br/igor/infra/repositorios/CidadeRepositorio.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/igor_projeto_ap_dois_war_exploded.war/WEB-INF/classes/frb/edu/br/igor/infra/repositorios/EnderecoRepositorio.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/igor_projeto_ap_dois_war_exploded.war/WEB-INF/classes/frb/edu/br/igor/infra/repositorios/PaisRepositorio.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/igor_projeto_ap_dois_war_exploded.war/WEB-INF/faces-config.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/igor_projeto_ap_dois_war_exploded.war/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/igor_projeto_ap_dois_war_exploded.war/index.xhtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/igor_projeto_ap_dois.war/igor-projeto-ap-dois.war" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/igor_projeto_ap_dois.war/igor-projeto-ap-dois.war" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/frb/edu/br/igor/controladores/CidadeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frb/edu/br/igor/controladores/CidadeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/frb/edu/br/igor/infra/data/BancoDeDadosUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frb/edu/br/igor/infra/data/BancoDeDadosUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/frb/edu/br/igor/infra/repositorios/CidadeRepositorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frb/edu/br/igor/infra/repositorios/CidadeRepositorio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/frb/edu/br/igor/infra/repositorios/PaisRepositorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frb/edu/br/igor/infra/repositorios/PaisRepositorio.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/frb/edu/br/igor/controladores/CidadeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/frb/edu/br/igor/controladores/CidadeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/frb/edu/br/igor/infra/data/BancoDeDadosUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/frb/edu/br/igor/infra/data/BancoDeDadosUtil.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/frb/edu/br/igor/infra/repositorios/CidadeRepositorio.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/frb/edu/br/igor/infra/repositorios/CidadeRepositorio.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edicao-cidade.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/edicao-cidade.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/listagem-cidade.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/listagem-cidade.xhtml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -89,7 +70,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs.jest.jest_package" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -99,6 +80,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="frb.edu.br.igor.controladores" />
       <recent name="frb.edu.br.igor.infra.repositorios" />
       <recent name="frb.edu.br.igor.dominio.contratos" />
     </key>
@@ -123,8 +105,7 @@
   <component name="RunManager">
     <configuration name="JBoss 18.0.0.Final" type="JBossConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="JBoss 18.0.0.Final" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/igor-projeto-ap-dois/" />
-      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
-      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="igor-projeto-ap-dois">
           <settings />
@@ -274,7 +255,10 @@
       <workItem from="1591799701604" duration="79000" />
       <workItem from="1591836675864" duration="4499000" />
       <workItem from="1591841252990" duration="2398000" />
-      <workItem from="1591843824570" duration="1617000" />
+      <workItem from="1591843824570" duration="1690000" />
+      <workItem from="1591919630442" duration="3880000" />
+      <workItem from="1591923691604" duration="465000" />
+      <workItem from="1591925449146" duration="1811000" />
     </task>
     <servers />
   </component>
@@ -295,14 +279,11 @@
     </option>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/frb/edu/br/igor/infra/repositorios/CidadeRepositorio.java</url>
-          <line>55</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JBossConfiguration">
+        <watch expression="cidades.get(1)" />
+        <watch expression="cidade" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

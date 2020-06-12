@@ -8,6 +8,10 @@
    <f:view>
       <h:form>
          <h2>LISTAGEM DE CIDADES</h2>
+         <br />
+         <h:commandLink value="Voltar para o menu principal" action="index" /><br />
+         <h:commandLink value="Adicionar uma cidade" action="#{cidadeController.prepararInclusao}" /><br />
+
          <h:dataTable border="2" value="#{cidadeController.cidades}" var="cidade">
             <h:column>
                <f:facet name="header">Nome</f:facet>
@@ -27,6 +31,13 @@
             <h:column>
                <f:facet name="header"></f:facet>
                <h:commandLink value="Editar" action="edicao-cidade">
+                  <f:setPropertyActionListener target="#{cidadeController.cidade}" value="#{cidade}" />
+               </h:commandLink>
+            </h:column>
+
+            <h:column>
+               <f:facet name="header"></f:facet>
+               <h:commandLink value="Excluir" action="#{cidadeController.finalizarDelecao}">
                   <f:setPropertyActionListener target="#{cidadeController.cidade}" value="#{cidade}" />
                </h:commandLink>
             </h:column>

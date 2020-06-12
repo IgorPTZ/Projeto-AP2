@@ -53,7 +53,7 @@ public class CidadeRepositorio extends BancoDeDadosUtil implements ICidade {
     @Override
     public boolean alterar(Cidade cidade) {
 
-        String sql = "UPDATE cidade SET cidade = ?, pais_id = ?, ultima_atualizacao = ?" + " WHERE cidade_id = ?";
+        String sql = "UPDATE cidade SET cidade =?, pais_id =?, ultima_atualizacao = ?" + " WHERE cidade_id = ?";
 
         PreparedStatement statement;
 
@@ -156,7 +156,7 @@ public class CidadeRepositorio extends BancoDeDadosUtil implements ICidade {
 
                 pais = paisRepositorio.getRegistroPorId(resultSet.getLong("pais_id"));
 
-                cidades.add(new Cidade(resultSet.getLong("pais_id"),
+                cidades.add(new Cidade(resultSet.getLong("cidade_id"),
                                        resultSet.getString("cidade"),
                                        pais,
                                        resultSet.getTimestamp("ultima_atualizacao")));

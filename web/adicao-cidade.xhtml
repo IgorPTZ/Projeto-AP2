@@ -7,13 +7,13 @@
       xmlns:f="http://xmlns.jcp.org/jsf/core">
    <f:view>
       <h:form>
-         <h2>EDIÇÃO DE CIDADE</h2>
-         <h:outputText value="Nome"/>
+         <h2>ADICIONAR CIDADE</h2>
+         <h:outputText value="Nome "/>
          <h:inputText value="#{cidadeController.cidade.cidade}"/>
 
          <br />
 
-          <h:outputText value="Pais"/>
+          <h:outputText value="Pais    "/>
           <h:selectOneMenu value="#{cidadeController.cidade.pais}" converter="paisConverter">
               <f:selectItems value="#{paisController.paises}"
                              var="pais" itemLabel="#{pais.pais}" itemValue="#{pais}"/>
@@ -22,7 +22,7 @@
          <br />
 
          <h:commandButton value="Voltar"  action="listagem-cidade" />
-         <h:commandButton value="Editar"  action="#{cidadeController.finalizarEdicao}" />
+         <h:commandButton value="Adicionar"  action="#{cidadeController.finalizarInclusao}" />
       </h:form>
    </f:view>
 </html>
