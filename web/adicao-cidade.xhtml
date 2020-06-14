@@ -7,19 +7,19 @@
       xmlns:f="http://xmlns.jcp.org/jsf/core">
    <f:view>
       <h:form>
-         <h2>ADICIONAR CIDADE</h2>
-         <h:outputText value="Nome "/>
-         <h:inputText value="#{cidadeController.cidade.cidade}"/>
+          <h2>ADICIONAR CIDADE</h2>
+          <h:outputText value="Nome"/>
+          <h:inputText value="#{cidadeController.cidade.cidade}"/>
+          <br />
+          <br />
 
-         <br />
-
-          <h:outputText value="Pais    "/>
+          <h:outputText value="Pais"/>
           <h:selectOneMenu value="#{cidadeController.cidade.pais}" converter="paisConverter">
               <f:selectItems value="#{paisController.paises}"
                              var="pais" itemLabel="#{pais.pais}" itemValue="#{pais}"/>
           </h:selectOneMenu>
-
-         <br />
+          <br />
+          <br />
 
          <h:commandButton value="Voltar"  action="listagem-cidade" />
          <h:commandButton value="Adicionar"  action="#{cidadeController.finalizarInclusao}" />

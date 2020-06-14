@@ -17,38 +17,41 @@ import java.util.List;
 public class PaisController implements Serializable {
 
     private Pais pais;
-    private List<Pais> paises = null;
+    private List<Pais> paises;
     private IPais paisRepositorio = new PaisRepositorio();
 
     public PaisController() {
+        paises = paisRepositorio.getListaDeTodosRegistros();
+    }
 
+    public Pais getPais() {
+        return pais;
+    }
+
+    public void setPais(Pais pais) {
+        this.pais = pais;
     }
 
     public List<Pais> getPaises() {
-
-        if(paises == null){
-            paises = paisRepositorio.getListaDeTodosRegistros();
-        }
-        return paises;
+        return paises = paisRepositorio.getListaDeTodosRegistros();
     }
 
     public String prepararInclusao(){
 
         pais = new Pais();
 
-        return "vaiParaIncluir";
+        return "adicao-pais";
     }
 
-    public String finalizaInclusao(){
+    public String finalizarInclusao(){
 
         paisRepositorio.inserir(pais);
         pais = null;
-        paises = null;
 
         return "listagem-pais";
     }
 
-    public String finalizaEdicao(){
+    public String finalizarEdicao(){
 
         paisRepositorio.alterar(pais);
         pais = null;
@@ -56,7 +59,7 @@ public class PaisController implements Serializable {
         return "listagem-pais";
     }
 
-    public String finalizaDelecao(){
+    public String finalizarDelecao(){
 
         paisRepositorio.excluir(pais.getPais_id());
         pais = null;

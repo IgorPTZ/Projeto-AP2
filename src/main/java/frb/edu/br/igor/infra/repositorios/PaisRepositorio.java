@@ -19,7 +19,7 @@ public class PaisRepositorio extends BancoDeDadosUtil implements IPais{
     @Override
     public boolean inserir(Pais pais) {
 
-        String sql = "INSERT INTO produto (pais, ultima_atualizacao)" +  " VALUES (?, ?)";
+        String sql = "INSERT INTO pais (pais, ultima_atualizacao) VALUES (?, ?)";
 
         PreparedStatement statement;
 

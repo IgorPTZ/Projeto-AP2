@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+   <f:view>
+      <h:form>
+         <h2>LISTAGEM DE PAISES</h2>
+         <br />
+         <h:commandLink value="Voltar para o menu principal" action="index" /><br />
+         <h:commandLink value="Adicionar um pais" action="#{paisController.prepararInclusao}" /><br />
+
+         <h:dataTable border="2" value="#{paisController.paises}" var="pais">
+            <h:column>
+               <f:facet name="header">Nome</f:facet>
+               <h:outputText value="#{pais.pais}" />
+            </h:column>
+
+            <h:column>
+               <f:facet name="header">Ultima atualizacação</f:facet>
+               <h:outputText value="#{pais.ultima_atualizacao}" />
+            </h:column>
+
+            <h:column>
+               <f:facet name="header"></f:facet>
+               <h:commandLink value="Editar" action="edicao-pais">
+                  <f:setPropertyActionListener target="#{paisController.pais}" value="#{pais}" />
+               </h:commandLink>
+            </h:column>
+
+            <h:column>
+               <f:facet name="header"></f:facet>
+               <h:commandLink value="Excluir" action="#{paisController.finalizarDelecao}">
+                  <f:setPropertyActionListener target="#{paisController.pais}" value="#{pais}" />
+               </h:commandLink>
+            </h:column>
+         </h:dataTable>
+      </h:form>
+   </f:view>
+</html>

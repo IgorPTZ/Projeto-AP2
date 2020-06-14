@@ -111,6 +111,7 @@ public class CidadeRepositorio extends BancoDeDadosUtil implements ICidade {
     public Cidade getRegistroPorId(Long id) {
 
         Cidade cidade = new Cidade();
+        Pais pais = null;
 
         String sql = "SELECT cidade_id, cidade, pais_id, ultima_atualizacao FROM cidade WHERE cidade_id = ?";
 
@@ -122,9 +123,11 @@ public class CidadeRepositorio extends BancoDeDadosUtil implements ICidade {
             ResultSet resultSet = statement.executeQuery();
 
             while(resultSet.next()){
+                pais = paisRepositorio.getRegistroPorId(resultSet.getLong("pais_id"));
+
                 cidade = new Cidade(resultSet.getLong("pais_id"),
                                     resultSet.getString("cidade"),
-                                    new Pais(resultSet.getLong("pais_id")),
+                                    pais,
                                     resultSet.getTimestamp("ultima_atualizacao"));
             }
 

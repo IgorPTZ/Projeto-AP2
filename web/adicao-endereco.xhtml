@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+   <f:view>
+      <h:form>
+          <h2>ADICIONAR ENDERECO</h2>
+          <h:outputText value="Endereco 1"/>
+          <h:inputText value="#{enderecoController.endereco.endereco}"/>
+          <br />
+          <br />
+
+          <h:outputText value="Endereco 2"/>
+          <h:inputText value="#{enderecoController.endereco.endereco2}"/>
+          <br />
+          <br />
+
+          <h:outputText value="Bairro"/>
+          <h:inputText value="#{enderecoController.endereco.bairro}"/>
+          <br />
+          <br />
+
+          <h:outputText value="Cidade"/>
+          <h:selectOneMenu value="#{enderecoController.endereco.cidade}" converter="cidadeConverter">
+              <f:selectItems value="#{cidadeController.cidades}"
+                             var="cidade" itemLabel="#{cidade.cidade}" itemValue="#{cidade}"/>
+          </h:selectOneMenu>
+          <br />
+          <br />
+
+          <h:outputText value="CEP"/>
+          <h:inputText value="#{enderecoController.endereco.cep}"/>
+          <br />
+          <br />
+
+          <h:outputText value="Telefone"/>
+          <h:inputText value="#{enderecoController.endereco.telefone}"/>
+          <br />
+          <br />
+
+         <h:commandButton value="Voltar"  action="listagem-endereco" />
+         <h:commandButton value="Adicionar"  action="#{enderecoController.finalizarInclusao}" />
+      </h:form>
+   </f:view>
+</html>

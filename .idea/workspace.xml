@@ -7,19 +7,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a7fbfe0d-9c5b-431c-b5e3-a10a503fc714" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/frb/edu/br/igor/controladores/PaisController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/frb/edu/br/igor/controladores/util/PaisConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/.idea/web.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/adicao-cidade.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/frb/edu/br/igor/controladores/EnderecoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/frb/edu/br/igor/controladores/util/CidadeConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/adicao-endereco.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/adicao-pais.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/edicao-endereco.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/edicao-pais.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/listagem-endereco.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/listagem-pais.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/igor_projeto_ap_dois.war/igor-projeto-ap-dois.war" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/igor_projeto_ap_dois.war/igor-projeto-ap-dois.war" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/frb/edu/br/igor/controladores/CidadeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frb/edu/br/igor/controladores/CidadeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/frb/edu/br/igor/controladores/PaisController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frb/edu/br/igor/controladores/PaisController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/frb/edu/br/igor/infra/repositorios/CidadeRepositorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frb/edu/br/igor/infra/repositorios/CidadeRepositorio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/frb/edu/br/igor/infra/repositorios/EnderecoRepositorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frb/edu/br/igor/infra/repositorios/EnderecoRepositorio.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/frb/edu/br/igor/infra/repositorios/PaisRepositorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frb/edu/br/igor/infra/repositorios/PaisRepositorio.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/frb/edu/br/igor/controladores/CidadeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/frb/edu/br/igor/controladores/CidadeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/frb/edu/br/igor/controladores/PaisController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/frb/edu/br/igor/controladores/PaisController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/frb/edu/br/igor/infra/repositorios/CidadeRepositorio.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/frb/edu/br/igor/infra/repositorios/CidadeRepositorio.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/frb/edu/br/igor/infra/repositorios/EnderecoRepositorio.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/frb/edu/br/igor/infra/repositorios/EnderecoRepositorio.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/adicao-cidade.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/adicao-cidade.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/edicao-cidade.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/edicao-cidade.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/listagem-cidade.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/listagem-cidade.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.xhtml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +79,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web" />
     <property name="nodejs.jest.jest_package" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -80,6 +89,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="frb.edu.br.igor.controladores.util" />
       <recent name="frb.edu.br.igor.controladores" />
       <recent name="frb.edu.br.igor.infra.repositorios" />
       <recent name="frb.edu.br.igor.dominio.contratos" />
@@ -258,7 +268,8 @@
       <workItem from="1591843824570" duration="1690000" />
       <workItem from="1591919630442" duration="3880000" />
       <workItem from="1591923691604" duration="465000" />
-      <workItem from="1591925449146" duration="1811000" />
+      <workItem from="1591925449146" duration="2155000" />
+      <workItem from="1592088383103" duration="4856000" />
     </task>
     <servers />
   </component>

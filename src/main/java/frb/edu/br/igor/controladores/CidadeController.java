@@ -14,11 +14,11 @@ import java.util.List;
 public class CidadeController implements Serializable {
 
     private Cidade cidade;
-    private List<Cidade> cidades = null;
+    private List<Cidade> cidades;
     private ICidade cidadeRepositorio = new CidadeRepositorio();
 
     public CidadeController() {
-
+        cidades = cidadeRepositorio.getListaDeTodosRegistros();
     }
 
     public Cidade getCidade() {

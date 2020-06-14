@@ -7,15 +7,14 @@
       xmlns:f="http://xmlns.jcp.org/jsf/core">
    <f:view>
       <h:form>
-         <h2>CRUD DE LOCALIZAÇÃO</h2>
-         <br />
-         <h:commandButton value="Ir para a listagem de paises" action="listagem-pais"/>
-         <br />
-         <br />
-         <h:commandButton value="Ir para a listagem de cidades" action="listagem-cidade" />
-         <br />
-         <br />
-         <h:commandButton value="Ir para a listagem de endereços" action="listagem-endereco" />
+          <h2>ADICIONAR PAIS</h2>
+          <h:outputText value="Nome"/>
+          <h:inputText value="#{paisController.pais.pais}"/>
+          <br />
+          <br />
+
+         <h:commandButton value="Voltar"  action="listagem-pais" />
+         <h:commandButton value="Adicionar"  action="#{paisController.finalizarInclusao}" />
       </h:form>
    </f:view>
 </html>

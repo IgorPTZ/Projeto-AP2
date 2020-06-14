@@ -18,6 +18,8 @@ import java.util.logging.Logger;
 
 public class EnderecoRepositorio extends BancoDeDadosUtil implements IEndereco {
 
+    private CidadeRepositorio cidadeRepositorio = new CidadeRepositorio();
+
     @Override
     public boolean inserir(Endereco endereco) {
 
@@ -119,6 +121,7 @@ public class EnderecoRepositorio extends BancoDeDadosUtil implements IEndereco {
     public Endereco getRegistroPorId(Long id) {
 
         Endereco endereco = new Endereco();
+        Cidade cidade = null;
 
         String sql = "SELECT endereco_id, endereco, endereco2, bairro, cidade_id, cep, telefone, ultima_atualizacao FROM endereco WHERE endereco_id = ?";
 
@@ -130,11 +133,13 @@ public class EnderecoRepositorio extends BancoDeDadosUtil implements IEndereco {
             ResultSet resultSet = statement.executeQuery();
 
             while(resultSet.next()){
+                cidade = cidadeRepositorio.getRegistroPorId(resultSet.getLong("cidade_id"));
+
                 endereco = new Endereco(resultSet.getLong("endereco_id"),
                                         resultSet.getString("endereco"),
                                         resultSet.getString("endereco2"),
                                         resultSet.getString("bairro"),
-                                        new Cidade(resultSet.getLong("cidade_id")),
+                                        cidade,
                                         resultSet.getString("cep"),
                                         resultSet.getString("telefone"),
                                         resultSet.getTimestamp("ultima_atualizacao"));
@@ -157,6 +162,8 @@ public class EnderecoRepositorio extends BancoDeDadosUtil implements IEndereco {
     public List<Endereco> getListaDeTodosRegistros() {
 
         List<Endereco> enderecos = new LinkedList<Endereco>();
+        Cidade cidade = null;
+
         String sql = "SELECT endereco_id, endereco, endereco2, bairro, cidade_id, cep, telefone, ultima_atualizacao FROM endereco ";
 
         try {
@@ -164,12 +171,13 @@ public class EnderecoRepositorio extends BancoDeDadosUtil implements IEndereco {
             ResultSet resultSet = statement.executeQuery();
 
             while(resultSet.next()){
+                cidade = cidadeRepositorio.getRegistroPorId(resultSet.getLong("cidade_id"));
 
                 enderecos.add( new Endereco(resultSet.getLong("endereco_id"),
                                             resultSet.getString("endereco"),
                                             resultSet.getString("endereco2"),
                                             resultSet.getString("bairro"),
-                                             new Cidade(resultSet.getLong("cidade_id")),
+                                            cidade,
                                             resultSet.getString("cep"),
                                             resultSet.getString("telefone"),
                                             resultSet.getTimestamp("ultima_atualizacao")));
